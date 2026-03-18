@@ -1,0 +1,7 @@
+{
+    "player": {
+        "name": "DragonSlayer9000",
+        "level": 50
+    },
+    "inventory": ["sword", "shield", "really_long_item_name_here"]
+}
