@@ -9,8 +9,8 @@ extractor for LLM conversation exports.
 
 ## Supported Platforms
 - Claude ✅
-- Gemini (coming soon)
-- ChatGPT (coming soon)
+- Gemini ✅
+- ChatGPT ✅
 
 ## Files
 - mr_skeletal.py - strips JSON structure
