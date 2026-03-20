@@ -73,4 +73,4 @@ mr_skeletal(data)  # Strip the meat first!
 with open('claudeskeleton.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, indent=2)
 
-print("Done! Check skeleton.json")
+print("Done! Check skeleton.json")  
