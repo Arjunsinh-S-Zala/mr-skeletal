@@ -3,6 +3,7 @@ with open('exports/conversations(claude).json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 def extract_claude(data):
+    data.sort(key=lambda x: x.get("created_at", "")) 
     big_list = []
     for conversation in data:
         encasing__list = []
@@ -33,12 +34,12 @@ def extract_claude(data):
                 "attachments": attachments
              }
             encasing__list.append(filtered_final_messages)
-    big_list.append(encasing__list)        
+        big_list.append(encasing__list)        
     return big_list
 
 result = extract_claude(data)
 
-with open('claude_output_3.json', 'w', encoding='utf-8') as f:
+with open('outputs/claude_clean.json', 'w', encoding='utf-8') as f:
     json.dump(result, f, indent=2)
 
 print("Done!")
